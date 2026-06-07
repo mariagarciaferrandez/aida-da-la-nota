@@ -1,0 +1,71 @@
+/* Color del fondo */
+body {
+    background-color: white;
+}
+/* Estilo títulos y párrafos */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+/* Estilo de la imagen de la cabecera */
+.cabecera {
+  text-align: center;
+  margin-top: 20px;
+}
+.cabecera img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px;
+}
+/* ===== MENÚ PRINCIPAL ===== */
+/* display:flex coloca los elementos en fila */
+nav {
+    display: flex; 
+    width: 100%;
+    margin-top: 20px;
+}
+/* flex:1 hace que cada botón ocupe exactamente la misma anchura */
+nav a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    border: 1px solid #d4af37;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* El efecto hover cambia el color cuando el usuario pasa el ratón por encima */
+nav a:hover {
+    background-color: #d4af37;
+    color: white;
+}
+/* ===== APARTADO DE RECURSOS ===== */
+/* Coloca las tarjetas en fila y permite que bajen si no caben */
+.contenedor-recursos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* Tamaño de cada tarjeta */
+.tarjeta {
+    width: 250px;
+    transition: transform 0.3s;
+}
+/* Imagen dentro de cada tarjeta */
+.tarjeta img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+/* Efecto al pasar el ratón */
+.tarjeta:hover {
+    transform: scale(1.05);
+}
